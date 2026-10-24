@@ -1,0 +1,8 @@
+[submodule "third_party/SliQSim"]
+	path = third_party/SliQSim
+	url = https://github.com/NTU-ALComLab/SliQSim.git
+	ignore = dirty
+[submodule "third_party/SliQEC"]
+	path = third_party/SliQEC
+	url = https://github.com/NTU-ALComLab/SliQEC.git
+	ignore = dirty
