@@ -123,7 +123,7 @@ All benchmarks were executed on an AMD Ryzen 9 / Windows 11 platform with a stri
 
 Benchmark B evaluated **41 circuit pairs** spanning identical circuits, Qiskit transpiled rewrites, intentional global phase injections (`e^(iπ/4)`, `e^(iπ/2)`), and three mutation bug categories (dropped gates, control/target qubit swaps, gate type swaps).
 
-| Metric                             |  `qdd-sim` (Ours)   |     SliQEC (ALComLab)     |   Qiskit Operator   |
+| Metric                             |       qdd-sim       |     SliQEC (ALComLab)     |   Qiskit Operator   |
 | :--------------------------------- | :-----------------: | :-----------------------: | :-----------------: |
 | **Overall Accuracy**               | **75.6% (31 / 41)** |      73.2% (30 / 41)      |   43.9% (18 / 41)   |
 | **Identical Pairs (n = 4 ... 64)** | **11 / 11 (100%)**  |      11 / 11 (100%)       | 4 / 11 (OOM n ≥ 15) |
@@ -173,7 +173,7 @@ cmake --preset release
 # Build qdd-sim binary and test suites
 cmake --build --preset release
 
-# Run full CTest suite (100% passing)
+# Run full CTest suite
 ctest --preset release
 ```
 
